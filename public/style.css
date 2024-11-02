@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body{
+    margin: 0;
+    top: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.menu a{
+    color: #E96F05;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 15px;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.menu span{
+    color: #fff;
+    background-color: #E96F05;
+    padding: 15px 30px;
+    border-radius: 13px;
+}
+
+.img-logo img{
+    margin-bottom: -15%;
+}
+
+.container{
+    margin-top: 2%;
+    display: flex;
+}
+
+.texto{
+    width: 100%;
+    font-size: 50px;
+    text-align: end;
+    margin-top: 10%;
+    margin-right: 2%;
+}
+.texto button{
+    font-size: 60px;
+    background-color: #E96F05;
+    padding: 20px 100px;
+    font-family:'Fredoka', sans-serif; ;
+    font-weight: 600;
+    border-radius: 97px;
+    color: #fff;
+    margin-right: 5%;
+    border:none;
+    cursor: pointer;
+
+}
+
+.dog-left img{
+    width: 800px;
+    margin-bottom: -10px;
+    height: 100%;
+}
+
+
+
+
+
