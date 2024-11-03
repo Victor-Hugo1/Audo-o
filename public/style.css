@@ -1,75 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-body{
+body {
     margin: 0;
     top: 0;
     font-family: 'Fredoka', sans-serif;
 }
-header{
+/* MENU */
+header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
+    padding: 10px 5px;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
-
+    position: fixed;
+    width: 100%;
+    height:9%;
+    top: 0;
+    z-index: 10;
 }
 
-.menu a{
+.img-logo img {
+    height: 140px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
     color: #E96F05;
     font-weight: bold;
     text-decoration: none;
     font-size: 35px;
-    margin: 15px;
+    margin: 0 20px;
+    transition: color 0.3s ease, transform 0.4s ease;
 }
-.container{
+
+.menu a::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    border-radius: 30px;
+    background: #E96F05;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+.container {
     height: 100%;
     width: 100%;
 }
-.menu span{
+
+.menu span {
     color: #fff;
     background-color: #E96F05;
     padding: 15px 30px;
     border-radius: 13px;
+    transition: all 0.2s ease-in-out;
+}
+.menu span:hover{
+    color: #E96F05;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #E96F05;
 }
 
-.img-logo img{
+.img-logo img {
     margin-bottom: -15%;
 }
 
-.container{
+
+/* SEÇÃO */
+.container {
     margin-top: 2%;
     display: flex;
 }
 
-.texto{
+.texto {
     width: 100%;
     font-size: 50px;
     text-align: end;
     margin-top: 10%;
     margin-right: 2%;
 }
-.texto button{
+
+.texto button {
     font-size: 60px;
     background-color: #E96F05;
     padding: 20px 100px;
-    font-family:'Fredoka', sans-serif; ;
+    font-family: 'Fredoka', sans-serif;
+    ;
     font-weight: 600;
     border-radius: 97px;
     color: #fff;
     margin-right: 5%;
-    border:none;
+    border: none;
     cursor: pointer;
 
 }
 
-.dog-left img{
+.dog-left img {
     width: 800px;
     margin-bottom: -10px;
     height: 100%;
 }
-
-
-
-
-
