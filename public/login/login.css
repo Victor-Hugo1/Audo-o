@@ -245,3 +245,10 @@ body {
 .container.active .toggle-right {
     transform: translateX(200%);
 }
+
+@media (max-width: 2000px){
+    .background{
+        background-position: 0;
+    }
+    
+}
