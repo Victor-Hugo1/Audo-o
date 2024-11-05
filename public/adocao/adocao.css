@@ -38,7 +38,13 @@ body {
 
 p {
     font-size: 90px;
-    font-weight: 600;
+    font-weight: 1000;
     color: #E96F05;
     text-align: center;
+}
+
+/* Seção Adoção */
+
+.card{
+    background-color: #fff;
 }
