@@ -37,7 +37,7 @@ header.boxshadow{
     text-decoration: none;
     font-size: 35px;
     margin: 0 20px;
-    transition: color 0.3s ease, transform 0.4s ease;
+    transition: color 0.4s ease-in-out;
 }
 
 .menu a::after{
@@ -47,7 +47,7 @@ header.boxshadow{
     border-radius: 30px;
     background: #E96F05;
     display: block;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
 .menu a:hover::after {
@@ -65,13 +65,15 @@ header.boxshadow{
     background-color: #E96F05;
     padding: 15px 30px;
     border-radius: 13px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .menu span:hover{
     color: #E96F05;
     background-color: #ffffff;
     border: 2px solid;
     border-color: #E96F05;
+    transition: all 0.3s ease-in-out;
+   
 }
 
 .img-logo img {
