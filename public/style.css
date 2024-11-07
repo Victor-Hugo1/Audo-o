@@ -3,6 +3,7 @@
 body {
     margin: 0;
     top: 0;
+    bottom: 0;
     font-family: 'Fredoka', sans-serif;
 }
 /* MENU */
@@ -115,3 +116,35 @@ header.boxshadow{
     margin-bottom: -10px;
     height: 100%;
 }
+
+
+/* RODAPÉ */
+footer{
+    width: 100%;
+    height:600px;
+    margin-top: 25%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to bottom ,#fff, #e96f0598, #E96F05);
+}
+
+footer img{
+    width: 320px;
+    height: 240px;
+    
+}
+footer h3{
+    font-weight: 200;
+    color: #fff;
+}
+footer i {
+    margin: 5px;
+    margin-top: 15%;
+    transition: all 0.4s ease-in-out;
+}
+footer i:hover{
+    transform: translateY(-15px);
+    
+}
+

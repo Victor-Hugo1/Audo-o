@@ -46,19 +46,19 @@ p {
 
 /* Seção Adoção */
 
-.background-peludos{
+.background-peludos {
     background-image: url(./imgs/FundoBola.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 0px 100px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    gap:16px;
+    gap: 16px;
 }
 
 .card-dog {
@@ -68,81 +68,110 @@ p {
     border-radius: 10px;
     margin: 100px;
     box-shadow: 9px 9px 5px rgba(0, 0, 0, 0.5);
-    cursor:pointer;
+    cursor: pointer;
     margin-top: 15%;
     transition: all 0.6s ease;
 }
-.card-dog:hover{
+
+.card-dog:hover {
     transform: translateY(-100px);
-    
+
 }
 
-.card-dog img{
+.card-dog img {
     width: 100%;
     height: 250px;
-    border-top-left-radius: 12px ;
+    border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-.card-dog .dogs{
+.card-dog .dogs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     height: 50%;
 }
-.card-dog h1{
+
+.card-dog h1 {
     font-size: 40px;
     color: #E96F05;
     margin-top: -15%;
     margin-bottom: -2px;
     margin-left: 10px;
 }
-.card-dog span{
+
+.card-dog span {
     font-size: 30px;
     font-weight: 1000;
     padding-top: 20px;
-    
+
 }
 
 /* BOTÕES */
 
 .botao{
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.botao button{
-    height: 100px;
-    background-color: #E96F05;
-    color: #fff;
-    border: none;
-    text-align: start;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 50px;
-    font-size: 40px;
+.botao button {
+    --color: #E96F05;
     font-family: 'Fredoka', sans-serif;
-    font-weight: 800;
-}
-
-footer{
-    width: 100%;
-    height: 600px;
-    margin-top: 25%;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    background: linear-gradient(to bottom ,#fff, #e96f0598, #E96F05);
-}
-
-footer img{
-    margin-top: 15%;
-    width: 320px;
-    height: 240px;
-}
-footer h3{
-    font-weight: 200;
+    display: inline-block;
+    width: 15em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 30px;
+    border-radius: 40px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: #fff;
+  }
+  
+  .botao button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 190px;
+    width: 600px;
+    border-radius: 50%;
+  }
+  
+  .botao button:hover {
     color: #fff;
+  }
+  .botao button:hover i {
+    color: #fff; 
 }
+
+  
+  .botao button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .botao button:hover:before {
+    top: -50px;
+    left: -50px;
+  }
+  
+  .botao button:active:before {
+    background: #E96F05;
+    transition: background 0s;
+  }
+ 
+  .botao i{
+    color: #E96F05;
+    margin-left: 10px;
+    transition: color 0.5s;
+  }
