@@ -145,6 +145,41 @@ footer i {
 }
 footer i:hover{
     transform: translateY(-15px);
+    cursor: pointer;
     
+}
+
+
+/* animação de navegar */
+
+/* Animação de Fade-In com Blur */
+.page-transition-in {
+    animation: fadeInBlur 0.8s ease-in forwards;
+}
+
+.page-transition-out {
+    animation: fadeOutBlur 0.4s ease-out forwards;
+}
+
+@keyframes fadeInBlur {
+    0% {
+        opacity: 0;
+       
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes fadeOutBlur {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(20px);
+    }
 }
 
