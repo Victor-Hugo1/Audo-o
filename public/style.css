@@ -128,41 +128,17 @@ header.boxshadow {
 
 
 /* RODAPÉ */
-footer {
-    
-    position: relative;
-    left: 0;
+footer{
     width: 100%;
-    background: linear-gradient(to bottom, #f89a47c7 ,#e96f05e5);
-    border-top: solid 2px #fff;
+    height: 500px;
+    background-color: #E96F05;
+   
 }
-
-footer h3{
-    display: flex;
-    position: relative;
-    height: 100px;
-    color: #fff;
-    font-weight: 200;
-    justify-content: center;
-    align-items: end;
-}
-footer img{
-    display: flex;
-    margin-top: 2%;
-    width: 300px;
-}
-
-.footer-opc{
-    display: flex;
-    justify-content: end;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 40px;
-}
-footer li{
-    font-size: 15px;
-    padding: 10px;
-    color: #fff;
+.direita{
+    position: absolute;
+    right: 0;
+    top: 400%;
+    transform: translateY(255%);
 }
 
 
