@@ -164,3 +164,30 @@ body {
 .texto-missao span {
     font-size: 40px;
 }
+
+
+ .ODS{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-bottom: -10%;
+  
+}
+.ODS img{
+    transition: all 0.5s ease-in-out;
+}
+
+.ODS img:hover{
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+}
+.cachorro-olhando{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -25%;
+}
+.cachorro-olhando img{
+    width: 650px;
+}
