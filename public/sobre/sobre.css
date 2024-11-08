@@ -21,6 +21,7 @@ body {
     width: 100%;
     color: #E96F05;
     margin-left: 50px;
+    margin-bottom: 35px;
 
 }
 
@@ -159,6 +160,7 @@ body {
 .texto-missao h1 {
     font-size: 120px;
     color: #000000;
+    margin-bottom: 35px;
 }
 
 .texto-missao span {
@@ -186,7 +188,6 @@ body {
 .cachorro-olhando{
     display: flex;
     justify-content: center;
-    margin-bottom: -25%;
 }
 .cachorro-olhando img{
     width: 650px;

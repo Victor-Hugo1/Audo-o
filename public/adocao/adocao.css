@@ -111,7 +111,7 @@ p {
 
 /* BOTÕES */
 
-.botao{
+.botao {
     display: flex;
     justify-content: center;
 }
@@ -135,9 +135,9 @@ p {
     font-weight: 500;
     color: var(--color);
     background-color: #fff;
-  }
-  
-  .botao button:before {
+}
+
+.botao button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -145,35 +145,43 @@ p {
     height: 190px;
     width: 600px;
     border-radius: 50%;
-  }
-  
-  .botao button:hover {
-    color: #fff;
-  }
-  .botao button:hover i {
-    color: #fff; 
 }
 
-  
-  .botao button:before {
+.botao button:hover {
+    color: #fff;
+}
+
+.botao button:hover i {
+    color: #fff;
+}
+
+
+.botao button:before {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
-  }
-  
-  .botao button:hover:before {
+}
+
+.botao button:hover:before {
     top: -50px;
     left: -50px;
-  }
-  
-  .botao button:active:before {
+}
+
+.botao button:active:before {
     background: #E96F05;
     transition: background 0s;
-  }
- 
-  .botao i{
+}
+
+.botao i {
     color: #E96F05;
     margin-left: 10px;
     transition: color 0.5s;
-   
-  }
+
+}
+
+
+@media screen and (max-width: 1800px) {
+    .background-peludos {
+        background-position: 0px -200px;
+    }
+}

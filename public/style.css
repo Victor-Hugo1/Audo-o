@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     top: 0;
     bottom: 0;
     font-family: 'Fredoka', sans-serif;
 }
+
 /* MENU */
 header {
     background-color: #fff;
@@ -15,11 +22,12 @@ header {
     padding: 10px 0;
     position: sticky;
     width: 100%;
-    height:9%;
+    height: 9%;
     top: 0;
     z-index: 10;
 }
-header.boxshadow{
+
+header.boxshadow {
     transition: all 0.2s ease;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -41,7 +49,7 @@ header.boxshadow{
     transition: color 0.4s ease-in-out;
 }
 
-.menu a::after{
+.menu a::after {
     content: '';
     width: 0%;
     height: 5px;
@@ -49,7 +57,7 @@ header.boxshadow{
     background: #E96F05;
     display: block;
     transition: all 0.5s ease-in-out;
-  }
+}
 
 .menu a:hover::after {
     width: 100%;
@@ -68,13 +76,14 @@ header.boxshadow{
     border-radius: 13px;
     transition: all 0.3s ease-in-out;
 }
-.menu span:hover{
+
+.menu span:hover {
     color: #E96F05;
     background-color: #ffffff;
     border: 2px solid;
     border-color: #E96F05;
     transition: all 0.3s ease-in-out;
-   
+
 }
 
 .img-logo img {
@@ -119,35 +128,43 @@ header.boxshadow{
 
 
 /* RODAPÉ */
-footer{
+footer {
+    
+    position: relative;
+    left: 0;
     width: 100%;
-    height:600px;
-    margin-top: 25%;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    background: linear-gradient(to bottom ,#fff, #e96f0598, #E96F05);
+    background: linear-gradient(to bottom, #f89a47c7 ,#e96f05e5);
+    border-top: solid 2px #fff;
 }
 
-footer img{
-    width: 320px;
-    height: 240px;
-    
-}
 footer h3{
+    display: flex;
+    position: relative;
+    height: 100px;
+    color: #fff;
     font-weight: 200;
+    justify-content: center;
+    align-items: end;
+}
+footer img{
+    display: flex;
+    margin-top: 2%;
+    width: 300px;
+}
+
+.footer-opc{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+}
+footer li{
+    font-size: 15px;
+    padding: 10px;
     color: #fff;
 }
-footer i {
-    margin: 5px;
-    margin-top: 15%;
-    transition: all 0.4s ease-in-out;
-}
-footer i:hover{
-    transform: translateY(-15px);
-    cursor: pointer;
-    
-}
+
 
 
 /* animação de navegar */
@@ -164,11 +181,12 @@ footer i:hover{
 @keyframes BlurIndo {
     0% {
         opacity: 0;
-       
+
     }
+
     100% {
         opacity: 1;
-        
+
     }
 }
 
@@ -177,9 +195,9 @@ footer i:hover{
         opacity: 1;
         filter: blur(0);
     }
+
     100% {
         opacity: 0;
         filter: blur(20px);
     }
 }
-
