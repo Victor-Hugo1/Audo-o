@@ -152,16 +152,16 @@ footer i:hover{
 
 /* animação de navegar */
 
-/* Animação de Fade-In com Blur */
-.page-transition-in {
-    animation: fadeInBlur 0.8s ease-in forwards;
+
+.transicao-blur-entrando {
+    animation: BlurIndo 0.8s ease-in forwards;
 }
 
-.page-transition-out {
-    animation: fadeOutBlur 0.4s ease-out forwards;
+.transicao-blur-saindo {
+    animation: BlurSaindo 0.4s ease-out forwards;
 }
 
-@keyframes fadeInBlur {
+@keyframes BlurIndo {
     0% {
         opacity: 0;
        
@@ -172,7 +172,7 @@ footer i:hover{
     }
 }
 
-@keyframes fadeOutBlur {
+@keyframes BlurSaindo {
     0% {
         opacity: 1;
         filter: blur(0);

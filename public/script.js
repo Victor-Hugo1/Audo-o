@@ -11,16 +11,16 @@ window.addEventListener("scroll", function() {
 
 
     document.addEventListener("DOMContentLoaded", function () {
-        // Aplica o efeito de fade-in e blur ao carregar a página
-        document.body.classList.add("page-transition-in");
+        
+        document.body.classList.add("transicao-blur-entrando");
     });
     
     function navigateTo(url) {
-        // Aplica o efeito de fade-out com blur antes de sair da página
-        document.body.classList.add("page-transition-out");
+       
+        document.body.classList.add("transicao-blur-saindo");
     
         setTimeout(function () {
             window.location.href = url;
-        }, 800); // Sincroniza com o tempo da animação fadeOutBlur (0.8s)
+        }, 400); 
     }
     
