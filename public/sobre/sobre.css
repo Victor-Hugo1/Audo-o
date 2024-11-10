@@ -173,11 +173,13 @@ body {
     width: 100%;
     justify-content: center;
     cursor: pointer;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: -10%;
   
 }
 .ODS img{
+    display: flex;
+    width: 400px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -190,5 +192,5 @@ body {
     justify-content: center;
 }
 .cachorro-olhando img{
-    width: 650px;
+    width: 550px;
 }

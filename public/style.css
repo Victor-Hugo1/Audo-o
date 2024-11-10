@@ -127,19 +127,83 @@ header.boxshadow {
 }
 
 
-/* RODAPÉ */
-footer{
+
+footer {
     width: 100%;
-    height: 500px;
     background-color: #E96F05;
-   
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
 }
-.direita{
+
+.container-footer {
+    width: 95%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meio {
     position: absolute;
-    right: 0;
-    top: 400%;
-    transform: translateY(255%);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
 }
+
+.meio img {
+    max-width: 400px; 
+    margin-bottom: 10px;
+}
+
+.direita {
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.footer-opc {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.contato-footer p{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contato-footer span{
+    border: none;
+    color: #fff;
+    display: flex;
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+}
+.contato-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 
 
 
