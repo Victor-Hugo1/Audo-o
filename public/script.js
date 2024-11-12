@@ -118,3 +118,14 @@ autorollBob = setInterval(() => {
 }
 document.addEventListener("DOMContentLoaded", () => {
 startBob(); })
+
+
+
+
+//ANIMACAO CARD
+
+document.querySelectorAll('.card-ods').forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.toggle('ativarRodar');
+    });
+});

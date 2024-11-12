@@ -27,9 +27,10 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1s ease;
+    cursor: pointer;
    
 }
-.card-ods:hover{
+.card-ods.ativarRodar{
     transform: rotateX(180deg);
 }
 .frente-ods-3{

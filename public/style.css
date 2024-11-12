@@ -136,8 +136,8 @@ header.boxshadow {
 
 footer {
     width: 100%;
-    background-color: #E96F05;
-    padding: 25px 0;
+    background: linear-gradient(to bottom, #e96f0562, #e96f05a9,#E96F05 );
+    padding: 50px 0;
     display: flex;
     justify-content: center;
 }

@@ -2,6 +2,7 @@
     background-image: url(./imgs/Fundo.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    
 }
  
 .container-carrossel{
@@ -57,11 +58,6 @@
 
 
 
-
-
-
-
-
 /* CARROSSEL DUQUE */
 
 .container-carrossel-2 {
@@ -70,20 +66,19 @@
     border-radius: 10px;
     top: 100%;
     background-color: #ffffff;
-    height: 510px;
+    height: 470px;
     right: 0;
     box-shadow: -10px 15px 10px #00000080;
     
 }
 .carrossel-2 {
     position: absolute;
-    width: 15%;
+    width: 80%;
     height: 500px;
     max-width: 300px;
     left: 15px;
     top: 20px;
     overflow: hidden;
-    border-radius: 12px;
     
 }
 
@@ -126,20 +121,19 @@
     border-radius: 10px;
     top: 175%;
     background-color: #ffffff;
-    height: 510px;
+    height: 470px;
     right: 0;
     box-shadow: -10px 15px 10px #00000080;
     
 }
 .carrossel-3 {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 500px;
     max-width: 300px;
     left: 15px;
-    top: 50px;
+    top: 20px;
     overflow: hidden;
-    border-radius: 12px;
     
 }
 
