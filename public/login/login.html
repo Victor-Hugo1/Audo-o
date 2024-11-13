@@ -21,7 +21,7 @@
             <div class="container" id="container">
                 <div class="formulario-container sign-up">
                  
-                    <form>
+                    <gente>
                         <div class="home-icon-1">
                             <a href="javascript:void(0);" onclick="navigateTo('../index.html')"><i class="fa-solid fa-house fa-2xl" style="color: #E96F05;"></i>
                             </a>                            
@@ -42,10 +42,10 @@
                         <input type="text" id="cadastroTelefone" placeholder="Telefone">
                         <button onclick="cadastrar()">Cadastrar</button>
 
-                    </form>
+                    </gente>
                 </div>
                 <div class="formulario-container sign-in">
-                    <form>
+                    <gente>
                         
                         <div class="home-icon-2">
                             <a href="javascript:void(0);" onclick="navigateTo('../index.html')"><i class="fa-solid fa-house fa-2xl" style="color: #E96F05;"></i>
@@ -66,7 +66,7 @@
                         <a href="#">Esqueceu sua senha?</a>
                         <button onclick="entrar()">Entrar</button>
 
-                    </form>
+                    </gente>
                 </div>
                 <div class="toggle-container">
                     <div class="toggle">
@@ -86,7 +86,7 @@
         </div>
     </div>
     <script src="../script.js"></script>
-    <script src="login.js"></script>
+    <script src="./login.js"></script>
 </body>
 
 </html>
@@ -96,7 +96,7 @@
 <script>
 
 function entrar() {
-        aguardar();
+        // aguardar();
 
         var emailVar = loginEmail.value;
         var senhaVar = senhaEmail.value;
@@ -138,9 +138,9 @@ function entrar() {
                     
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "../index.html";
                         // history.back(); Voltar para tela anterior
-                    }, 1000); // apenas para exibir o loading
+                    },1000); 
 
                 });
 
@@ -230,7 +230,8 @@ function entrar() {
         // Agora vá para o arquivo routes/usuario.js
         nomeServer: nomeVar,
         emailServer: emailVar,
-        senhaServer: senhaVar
+        senhaServer: senhaVar,
+        telefoneServer: telefoneVar
       }),
     })
       .then(function (resposta) {
