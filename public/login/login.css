@@ -271,3 +271,24 @@ body {
 .container.active .toggle-right {
     transform: translateX(200%);
 }
+
+
+/* CARD ALERTA */
+
+.card {
+    width: 50%;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: palevioletred;
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px 0;
+  }
+  
+  .card h2 {
+    margin: 0;
+    font-size: 30px;
+  }
