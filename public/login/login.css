@@ -88,6 +88,7 @@ body {
 
 .container h1 {
     font-size: 40px;
+    padding: 30px;
 }
 
 .container a {
@@ -183,28 +184,8 @@ body {
     }
 }
 
-.social-icons {
-    margin: 20px 0;
-}
 
-.social-icons a {
-    border: 1px solid #ccc;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
-}
 
-.container .social-icons a:hover {
-    height: 45px;
-    width: 45px;
-    color: #ffffff;
-    background-color: #E96F05;
-    transition: all 0.3s ease-in-out;
-}
 
 .toggle-container {
     position: absolute;
