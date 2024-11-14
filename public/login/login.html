@@ -41,9 +41,12 @@
                         <input type="password" id="cadastroSenha" placeholder="Senha">
                         <input type="text" id="cadastroTelefone" placeholder="Telefone">
                         <button onclick="cadastrar()">Cadastrar</button>
-
+                        
                     </gente>
+
                 </div>
+
+
                 <div class="formulario-container sign-in">
                     <gente>
                         
@@ -65,8 +68,13 @@
                         <input type="password" id="senhaEmail" placeholder="Senha">
                         <a href="#">Esqueceu sua senha?</a>
                         <button onclick="entrar()">Entrar</button>
+                      
+                        <div id="div_aguardar" class="loading-div">
+                            <img src="./imgs/dog-cute.gif">
+                        </div>
 
                     </gente>
+
                 </div>
                 <div class="toggle-container">
                     <div class="toggle">
@@ -85,6 +93,13 @@
             </div>
         </div>
     </div>
+
+    
+    <div class="card_erro" id="cardErro">
+        <span id="mensagem_erro">
+        </span>
+      </div>
+
     <script src="../script.js"></script>
     <script src="./login.js"></script>
 </body>
@@ -96,7 +111,7 @@
 <script>
 
 function entrar() {
-        // aguardar();
+        aguardar();
 
         var emailVar = loginEmail.value;
         var senhaVar = senhaEmail.value;
@@ -140,7 +155,7 @@ function entrar() {
                     setTimeout(function () {
                         window.location = "../index.html";
                         // history.back(); Voltar para tela anterior
-                    },1000); 
+                    },3000); 
 
                 });
 
@@ -198,7 +213,11 @@ function entrar() {
     ) {
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
-        "(Mensagem de erro para todos os campos em branco)";
+        "<br> Preencha todas as informações para cadastrar <img src='./imgs/doggie-nunu.gif'>";
+
+        setTimeout(function(){
+                cardErro.style.display = "none"
+            },3000)
 
       finalizarAguardar();
       return false;
@@ -239,13 +258,10 @@ function entrar() {
 
         if (resposta.ok) {
           cardErro.style.display = "block";
-
-          mensagem_erro.innerHTML =
-            "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
-          setTimeout(() => {
-            window.location = "login.html";
-          }, "2000");
+            mensagem_erro.innerHTML = '<br><br><br>Cadastro Realizado com sucesso!<img src="./imgs/dog-15_512.gif">'
+          setTimeout(function(){
+                cardErro.style.display = "none"
+            },3000)
 
           limparFormulario();
           finalizarAguardar();

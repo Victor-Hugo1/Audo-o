@@ -162,7 +162,11 @@ function limparSessao() {
 // carregamento (loading)
 function aguardar() {
     var divAguardar = document.getElementById("div_aguardar");
-    divAguardar.style.display = "flex";
+    divAguardar.style.display = "block";
+
+    setTimeout(function(){
+        divAguardar.style.display = "none";
+    },4000)
 }
 
 function finalizarAguardar(texto) {

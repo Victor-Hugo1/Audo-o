@@ -292,3 +292,51 @@ body {
     margin: 0;
     font-size: 30px;
   }
+
+ /* CARREGAMENTO LOGIN */
+  .loading-div {
+    width: 320px;
+    height: 20px;
+    margin: auto;
+    display: none;
+  }
+
+ 
+.loading-div img {
+    height: 80px;
+    margin-top: -10%;
+    width: 320px;
+  }
+/* CARREGAMENTO CADASTRO */
+  .card_erro {
+    display: none;
+    background-color: #fff;
+    border: solid 2px #db6905;
+    border-radius: 20px;
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    right: 0;
+    transition: all 0.7s ease-in-out;
+    margin-right: 5%;
+    z-index: 1;
+  }
+  
+  .card_erro #mensagem_erro{
+    font-weight: 600;
+    font-size: 25px;
+    color: #E96F05;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .card_erro #mensagem_erro img{
+    width: 180px;
+    margin-top: -10%;
+    height: 180px;
+  }
+  
