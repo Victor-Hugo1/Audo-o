@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.game{
+    border-bottom: 1px solid;
+    height: 400px;
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.score{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: x-large;
+}
+.cachorro{
+    position: absolute;
+    bottom: 0;
+    background-image: url(./imgs/woof-running.gif);
+    width: 230px;
+    height: 190px;
+    background-size: 230px;
+    background-repeat: no-repeat; 
+}
+.hidrante{
+    position: absolute;
+    bottom: 0;
+    background-image: url(./imgs/hidrante-removebg-preview.png);
+    width: 90px;
+    height: 105px;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    animation: hidrante 3s linear infinite;
+}
+
+@keyframes hidrante {
+    0%{
+        right: 20px;
+    }
+    100%{
+        right: 850px;
+    }
+}
+
+.pular{
+    animation: pular 1s linear;
+}
+
+@keyframes pular{
+    0%{
+        bottom: 0;
+    }
+    30%{
+        bottom: 100px;
+    }
+    50%{
+        bottom: 200px;
+    }
+    80%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
