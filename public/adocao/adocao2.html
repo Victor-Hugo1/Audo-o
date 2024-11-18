@@ -17,12 +17,13 @@
             <img src="../imgs/Logo.png">
         </div>
         <div class="menu">
-            <a href="javascript:void(0);" onclick="navigateTo('../index.html')">Home</a>
-            <a href="javascript:void(0);" onclick="navigateTo('./adocao.html')">Adoção</a>
-            <a href="javascript:void(0);" onclick="navigateTo('../sobre/sobre.html')">Sobre</a>
-            <a href="javascript:void(0);" onclick="navigateTo('../contato/contato.html')">Contate-nos</a>
-            <a href="javascript:void(0);" onclick="navigateTo('../login/login.html')"><span>Entrar</span></a>
-        </div>
+                <a href="javascript:void(0);" id="Home" onclick="navigateTo('../home2.html')">Home</a>
+                <a href="javascript:void(0);" id="Adocao" onclick="navigateTo('./adocao/adocao2.html')">Adoção</a>
+                <a href="javascript:void(0);" id="Sobre" onclick="navigateTo('../sobre/sobre2.html')">Sobre</a>
+                <a href="javascript:void(0);" id="Contate-nos" onclick="navigateTo('../contato/contato2.html')">Contate-nos</a>
+                <a href="javascript:void(0);" id="Descubra" onclick="navigateTo('../descubra/descubra.html')"><span>Descubra</span></a>
+                <a href="javascript:void(0);" id="Sair" onclick="limparSessao()"><span>Sair</span></a>
+                <a id="b_usuario"> Usuario </a> <img src="../imgs/user.png" style=" width:50px; margin-right: 10px;"></div>
     </header>
 
     <div class="banner">
@@ -203,3 +204,6 @@
 </body>
 
 </html>
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+</script>

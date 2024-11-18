@@ -142,6 +142,7 @@ document.querySelectorAll('.card-ods').forEach(card => {
 
 
 function validarSessao() {
+    
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
 
@@ -151,12 +152,24 @@ function validarSessao() {
         b_usuario.innerHTML = nome;
     } else {
         window.location = "./login/login.html";
+      
+            const elementoEntrar = document.getElementById("Entrar");
+            const elementoSair = document.getElementById("Sair");
+            const elementoUser = document.getElementById("b_usuario");
+
+            if(elementoEntrar){
+                elementoEntrar.style.display = "none";
+                elementoSair.style.display = "block";
+                elementoUser.style.display = "block";
+
+            }
+        
     }
 }
 
 function limparSessao() {
     sessionStorage.clear();
-    window.location = "./login/login.html";
+    window.location = "../index.html";
 }
 
 // carregamento (loading)
