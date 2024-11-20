@@ -30,9 +30,13 @@ setInterval(() => {
         window.getComputedStyle(hidrante).getPropertyValue('left')
     );
     if (hidranteLeft > 1 && hidranteLeft < 200 && cachorroBottom <= 2 && !jaPulou) {
-        alert (`Game Over! Sua pontuação foi: ${contar}`);
+         alert (`Game Over! Sua pontuação foi: ${contar}`);
         contar = 0;
     }
     contar++;
     score.innerHTML = `Pontuação: ${contar}`;
-}, 10);
+}, 5);
+
+
+
+

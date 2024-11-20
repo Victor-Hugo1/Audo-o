@@ -1,29 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+img{
+    position: absolute;
+    top: 5%;
+    width: 300px;
+}
 body{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f7f7f7;
+    background-image: url(../imgs/Textura.png);
+    font-family: 'Fredoka', sans-serif;
+
 }
 .game{
-    border-bottom: 1px solid;
+
+    border-radius: 20px;
     height: 400px;
     width: 800px;
     position: relative;
     overflow: hidden;
+    background-image: url(./imgs/12.jpg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+.home-icon-2{
+    color: #E96F05;
+    position: absolute;
+    left: 0;
+    margin-left: 5%;
+    top: 10%;
+    justify-content: start;
+    
+}
+
 
 .score{
     position: absolute;
     top: 30px;
     left: 0;
+    margin-left: 10px;
     font-size: x-large;
+    color: #f7f7f7;
+    font-weight: 500;
 }
 .cachorro{
     position: absolute;
@@ -38,11 +64,11 @@ body{
     position: absolute;
     bottom: 0;
     background-image: url(./imgs/hidrante-removebg-preview.png);
-    width: 90px;
-    height: 105px;
-    background-size: 90px;
+    width: 80px;
+    height: 90px;
+    background-size: 80px;
     background-repeat: no-repeat;
-    animation: hidrante 3s linear infinite;
+    animation: hidrante 1.6s linear infinite;
 }
 
 @keyframes hidrante {
@@ -63,13 +89,13 @@ body{
         bottom: 0;
     }
     30%{
-        bottom: 100px;
+        bottom: 120px;
     }
     50%{
-        bottom: 200px;
+        bottom: 220px;
     }
     80%{
-        bottom: 100px;
+        bottom: 120px;
     }
     100%{
         bottom: 0;
