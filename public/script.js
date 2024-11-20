@@ -151,7 +151,7 @@ function validarSessao() {
     if (email != null && nome != null) {
         b_usuario.innerHTML = nome;
     } else {
-        window.location = "./login/login.html";
+        window.location = "../login/login.html";
       
             const elementoEntrar = document.getElementById("Entrar");
             const elementoSair = document.getElementById("Sair");

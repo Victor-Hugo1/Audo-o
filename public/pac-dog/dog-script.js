@@ -1,3 +1,4 @@
+
 const cachorro = document.querySelector('.cachorro')
 const hidrante = document.querySelector('.hidrante')
 const score = document.querySelector('.score')
