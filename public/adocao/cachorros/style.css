@@ -1,0 +1,139 @@
+body{
+    font-family: 'Fredoka', sans-serif;
+    background-image: url(../../imgs/Textura.png);
+}
+
+
+.banner{
+    height: 450px;
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    
+   
+}
+.banner img{
+    display: flex;
+    width:40%;
+    height: 600px;
+    border-radius: 20px;
+    margin-left: 30px;
+    border: 3px solid #E96F05;
+}
+.dogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50%;
+}
+.descricao{
+    width: 100%;
+    display: flex;
+}
+.historia{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    right: 0;
+    width: 90%;
+    font-size: 25px;
+}
+.historia h1{
+    color: #E96F05;
+}
+.historia button{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    margin-top: 5%;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #E96F05;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+.historia button:hover{
+    color: #E96F05;
+    background-color: #fff;
+    border: 2px solid #E96F05;
+}
+
+
+.caracteristicas{
+    margin-left: 30px;
+}
+.caracteristicas h1{
+    color: #E96F05;
+    font-size: 35px;
+}
+.dogs span{
+    font-size: 30px;
+}
+.emailContato{
+    margin-top: -6%;
+    color: #E96F05;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+}
+.emailContato b{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#telaOculta {
+    display: none; 
+    position: fixed;
+    border: 2px solid #E96F05;
+    border-radius: 20px;
+    top: 40%;
+    transform: translateX(110%);
+    width: 30%;
+    height: 30%;
+    background-color: rgb(255, 255, 255); 
+    color: #E96F05;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+  #telaOculta .fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #E96F05;
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #telaOculta .fechar:hover {
+    color: #ff1f1f;
+    transition: all 0.3s ease-in-out;
+  }
+
+#telaOculta span,a {
+    color: #E96F05;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    
+}

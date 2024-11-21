@@ -1,0 +1,132 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Audoção</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="img-logo">
+            <img src="../../imgs/Logo.png">
+        </div>
+        <div class="menu">
+            <a href="javascript:void(0);" onclick="navigateTo('../index.html')">Home</a>
+            <a href="javascript:void(0);" onclick="navigateTo('./adocao.html')">Adoção</a>
+            <a href="javascript:void(0);" onclick="navigateTo('../sobre/sobre.html')">Sobre</a>
+            <a href="javascript:void(0);" onclick="navigateTo('../contato/contato.html')">Contate-nos</a>
+            <a href="javascript:void(0);" onclick="navigateTo('../login/login.html')"><span>Entrar</span></a>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="./imgs/paçoca.png">
+
+        <div class="descricao">
+            <div class="historia">
+                <h1>História Paçoca</h1>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br>Sed expedita dolor accusantium ducimus. <br>
+                    Magni, doloribus quidem aspernatur laboriosam aperiam aut <br>
+                    esse quas natus dolores, quam ex ipsam <br>aliquam voluptate quae!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br>Sed expedita dolor accusantium ducimus. <br>
+                    Magni, doloribus quidem aspernatur laboriosam aperiam aut <br>
+                    esse quas <br>natus dolores, quam ex ipsam aliquam voluptate quae!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br>Sed expedita dolor accusantium ducimus. <br>
+                    Magni, doloribus quidem aspernatur laboriosam aperiam aut <br>
+                    esse quas natus dolores, <br> quam ex ipsam aliquam voluptate quae!</span>
+                <button onclick="entrar()">Ficou Interessado? Clique aqui!!</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="caracteristicas">
+        <div class="dogs">
+            <h1>Caracteristicas</h1>
+            <span><i class="fas fa-mars"></i> Macho</span> <!-- Ícone de gênero -->
+            <span><i class="fa-solid fa-calendar-days"></i> 2 meses</span> <!-- Ícone de idade -->
+            <span><i class="fa-solid fa-heart" style="color: #ff3131;"></i> Não é castrado</span>
+            <!-- Ícone de status -->
+        </div>
+
+        <div class="emailContato">
+            <i class="fa-solid fa-envelope " style="color: #E96F05;"></i>
+            <span>Entre em contato por email! <br>
+                <b>@victor.hsouza@sptech.school</b></span>
+        </div>
+    </div>
+
+    <div id="telaOculta">
+        <p>Redes de Contato:</p>
+        <a href="https://wa.me/5511930144580?text=Olá!%20Gostaria%20de%20mais%20informações."
+            target="_blank"><br><br>
+        <i class="fab fa-whatsapp"></i></a>
+        <button class="fechar" onclick="sair()">X</button>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        
+        <div class="contato-footer">
+            <p>Canal de Contato:</p>
+            <span>victor.hsouza@sptech.schoool</span>
+        </div>
+        <div class="container-footer">
+            <div class="meio">
+                <img src="../../imgs/Logo sem fundo.png" alt="Logo">
+                <h3>Todos os direitos reservados © Victor Hugo 2024</h3>
+            </div>
+
+            <div class="direita">
+                <a href="../index.html">
+                    <p class="footer-opc">HOME</p>
+                </a>
+                <a href="../adocao/adocao.html">
+                    <p class="footer-opc">ADOÇÃO</p>
+                </a>
+                <a href="../sobre/sobre.html">
+                    <p class="footer-opc">SOBRE</p>
+                </a>
+                <a href="../contato/contato.html">
+                    <p class="footer-opc">CONTATE-NOS</p>
+                </a>
+                <a href="../login/login.html">
+                    <p class="footer-opc">LOGIN</p>
+                </a>
+                <div class="social-icons">
+                    <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+   
+</footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>
+
+
+<script>
+
+    function entrar() {
+        document.getElementById("telaOculta").style.display = "flex";
+
+    }
+
+
+    function sair() {
+        document.getElementById("telaOculta").style.display = "none";
+    }
+
+</script>

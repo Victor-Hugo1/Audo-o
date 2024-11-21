@@ -72,6 +72,10 @@ body {
     margin-top: 15%;
     transition: all 0.6s ease;
 }
+a{
+    text-decoration: none;
+    color: none;
+}
 
 .card-dog:hover {
     transform: translateY(-100px);
@@ -106,6 +110,7 @@ body {
     font-weight: 1000;
     padding-top: 20px;
     margin-left: 15px;
+    color: black;
 
 }
 
@@ -184,4 +189,72 @@ body {
     .background-peludos {
         background-position: 0px -200px;
     }
+}
+
+#telaOculta {
+    display: none; 
+    position: fixed;
+    border: 2px solid #E96F05;
+    border-radius: 20px;
+    top: 40%;
+    transform: translateX(110%);
+    width: 30%;
+    height: 30%;
+    background-color: rgb(255, 255, 255); 
+    color: #E96F05;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+  #telaOculta .fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #E96F05;
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #telaOculta .fechar:hover {
+    color: #ff1f1f;
+    transition: all 0.3s ease-in-out;
+  }
+
+#telaOculta span,a {
+    color: #E96F05;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+#telaOculta button{
+    border:none;
+    padding: 15px;
+    background-color: #E96F05;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+#telaOculta button:hover{
+    background-color: #fff;
+    color: #E96F05;
+    
+    
 }
