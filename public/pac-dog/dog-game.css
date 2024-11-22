@@ -19,8 +19,59 @@ body{
     font-family: 'Fredoka', sans-serif;
 
 }
-.game{
+.card-gameOver{
+    background-color: rgba(0, 0, 0, 0.753);
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 800px;
+    height: 400px;
+    z-index: -1;
+}
+.card-gameOver p{
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.card-gameOver span{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    color: #E96F05;
+    font-weight: 700;
 
+}
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.start button{
+    padding: 40px 200px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #f7f7f7;
+    border-radius: 60px;
+    background-color: #E96F05;
+    border: none;
+    font-family: 'Fredoka', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+.start button:hover{
+    font-size: 30px;
+}
+
+.game{
+    display: none;
     border-radius: 20px;
     height: 400px;
     width: 800px;
@@ -41,7 +92,6 @@ body{
     
 }
 
-
 .score{
     position: absolute;
     top: 30px;
@@ -59,6 +109,7 @@ body{
     height: 190px;
     background-size: 230px;
     background-repeat: no-repeat; 
+    
 }
 .hidrante{
     position: absolute;
@@ -101,3 +152,5 @@ body{
         bottom: 0;
     }
 }
+
+

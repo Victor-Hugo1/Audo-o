@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./dog-game.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="../imgs/Logo.png">
+    <title>Game Audocao</title>
     <img src="./imgs/Logo sem fundo.png">
 </head>
 
@@ -15,11 +16,26 @@
 </div>
 
 <body>
-    <div class="game">
-        <span class="score"></span>
+    <div id="botao" class="start">
+        <button onclick="ComecarJogo()">
+            Iniciar Jogo <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+        </button>
+    </div>
+    <div id="card-gameOver" class="card-gameOver">
+        <p>GAME OVER</p>
+        <span id="pontuacaoFinal">
+          
+        </span>
+    </div>
+    
+    <div id="game" class="game">
+        <span id="score" class="score"></span>
         <div class="cachorro"></div>
         <div id="hidrante" class="hidrante"></div>
-    </div>
+        </div>
+
+   
+    
 
     <script src="dog-script.js"></script>
     <script src="../script.js"></script>

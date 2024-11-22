@@ -119,9 +119,17 @@ p{
     color: #E96F05;
     justify-content:center;
     margin-bottom: 10%;
-    margin-left: 10%;
+    margin-left: 20%;
 }
-
-
-
-
+.grafico{
+    width: 50%;
+    height: 900px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+#meuGrafico{
+   
+    text-decoration: none;
+}
