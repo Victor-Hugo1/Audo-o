@@ -6,11 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <link rel="stylesheet" href="dash.css">
-
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -20,12 +18,11 @@
 <body>
     <nav>
         <div class="logo-name">
-        
             <span class="logo_name">Dash Audoção</span>
         </div>
 
         <div class="menu-items">
-            
+        
             <ul class="nav-links">
                 <li><a href="../home2.html">
                     <i class="uil uil-estate"></i>
@@ -46,58 +43,37 @@
                         <i class="uil uil-signout"></i>
                         <span class="link-name">Sair</span>
                     </a></li>
-                    
             </ul>
         </div>
     </nav>
 
     <section class="dashboard">
-        <div class="img-dog">
-            <img src="./imgs/image 5.png">
+        <div class="games">
+            <div class="card-game-run">
+                <h1>DOG RUN</h1>
+                <img src="../pac-dog/imgs/woof-running.gif">
+                <br><br><br>
+                <a href="../pac-dog/dog-game.html">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+            <div class="card-quiz">
+                <h1>QUIZ PERSONALIDADE</h1>
+                <br><br><br>
+                <img src="../pac-dog/imgs/nervous-dog-spinning.gif">
+                <br><br><br>
+                <a href="#">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
         </div>
-        
-        <div class="dash-content">
-            <div class="overview">
-                <div class="title">
-                    <i class="uil uil-tachometer-fast-alt"></i>
-                    <span class="text">Sua Classificação</span>
-                </div>
 
-                <div class="boxes">
-                    <div class="box box1">
-                        <i class="uil uil-thumbs-up"></i>
-                        <span class="text">Maior Pontuação</span>
-                        <span class="number">50,120</span>
-                    </div>
-                    <div class="box box2">
-                        <i class="uil uil-play"></i>
-                        <span class="text">Quantidade de Vezes Jogadas</span>
-                        <span class="number">20</span>
-                    </div>
-                    <div class="box box3">
-                        <i class="uil uil-heart"></i>
-                        <span class="text">Sua Personalidade</span>
-                        <span class="number">Extrovertido</span>
-                    </div>
-                </div>
-            </div>
-            <div class="graficos">
-            <div class="grafico-barra">
-                <canvas id="meuGrafico"></canvas>
-              </div>
-            <div class="grafico-pizza">
-                <canvas id="graficoPizza"></canvas>
-              </div>
-            </div>
     </section>
-
-    
 
     <script src="./dash.js"></script>
     <script src="../script.js"></script>
-    
 </body>
-
-</html><script>
+<script>
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 </script>
+</html>
