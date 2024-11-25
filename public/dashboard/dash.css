@@ -76,12 +76,15 @@ a{
 .grafico-barra{
     width: 50%;
     height: 350px;
+    border-radius: 20px;
     margin-top: 20%; 
+   
 }
 .grafico-pizza{
     width: 40%;
+    border-radius: 20px;
     margin-top: 10%; 
-}
+ 
 nav{
     position: fixed;
     top: 0;

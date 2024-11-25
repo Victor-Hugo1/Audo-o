@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 const ctx = document.getElementById('meuGrafico').getContext('2d');
 
 
@@ -6,7 +18,7 @@ const meuGrafico = new Chart(ctx, {
 
     type: 'bar',
     data: {
-        labels: ['Gigi', 'Outro', 'Mais Um'],
+        labels: [],
         datasets: [{
             label: 'Ranking',
             data: [12, 19, 3, 5, 2],
