@@ -88,21 +88,23 @@ const graficoPizza = new Chart(pizza, {
 
     type: 'pie',
     data: {
-        labels: ['Sentimental', 'Introvertido', 'Extrovertido'],
+        labels: ['Introversão', 'Sensível', 'Curiosa', 'Energética'],
         datasets: [{
             label: 'Ranking',
-            data: [12, 19, 50],
+            data: [12, 19, 20, 40],
 
             backgroundColor: [
                 'rgba(255, 84, 0)',
                 'rgba(255, 109, 0)',
-                'rgba(255, 133, 0)'
+                'rgba(255, 133, 0)',
+                'rgba(255, 153, 0)'
 
             ],
             borderColor: [
                 'rgba(255, 84, 0)',
                 'rgba(255, 109, 0)',
-                'rgba(255, 133, 0)'
+                'rgba(255, 133, 0)',
+                'rgba(255, 153, 0)'
 
             ],
             borderWidth: 2,
