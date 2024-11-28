@@ -43,15 +43,6 @@ fetch("/pegarDados/qtdVezesJogadas", {
 
 
 
-
-
-
-
-
-
-
-
-
 // MAIOR PONTUAÇÃO POR USUARIO
 fetch("/pegarDados/maiorPontuacao", {
     method: "POST",

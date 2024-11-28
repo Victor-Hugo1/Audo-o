@@ -1,0 +1,35 @@
+body{
+    background-image: url(../imgs/Textura.png);
+    background-size: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    height: 700px;
+}
+
+.container h1{
+    color: #E96F05;
+    font-size: 50px;
+}
+
+.container-quiz{
+
+    width: 800px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    background-color: #E96F05;
+}
+
+.container-quiz button{
+    border: none;
+    padding: 50px 100px ;
+}
