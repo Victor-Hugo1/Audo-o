@@ -1,5 +1,5 @@
 var contar = 0;
-
+var qtdVezesJogadas = 0;
 
 
 var intervaloPontuacao;
@@ -57,6 +57,8 @@ function ComecarJogo() {
         contar++;
         score.innerHTML = `Pontuação: ${contar}`;
     }, 5);
+
+    qtdVezesJogadas ++;
 }
 
 function mostrarResultados() {
@@ -82,6 +84,7 @@ function mostrarResultados() {
         body: JSON.stringify({
             contarServer: contar,
             idUsuarioServer: idUsuario,
+            qtdVezesJogadasServer : qtdVezesJogadas,
         })
     }).then(function (resposta) {
         console.log("ESTOU NO THEN DO entrar()!")

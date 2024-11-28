@@ -4,6 +4,7 @@ var gameModel = require("../models/gameModel")
 function cadastrar(req, res) {
     var pontuacao = req.body.contarServer;
     var idUsuario = req.body.idUsuarioServer;
+    var qtdVezesJogadas = req.body.qtdVezesJogadasServer;
 
 
     if (pontuacao == undefined) {
@@ -12,7 +13,7 @@ function cadastrar(req, res) {
         res.status(400).send("Você não tem um ID")
     }
 
-    gameModel.cadastrar(pontuacao,idUsuario)
+    gameModel.cadastrar(pontuacao,idUsuario,qtdVezesJogadas)
         .then(
             function (resultado) {
                 res.json(resultado);

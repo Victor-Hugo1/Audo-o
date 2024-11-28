@@ -21,6 +21,7 @@ var gameRouter = require("./src/routes/dogJump");
 var pegarDadosRouter = require("./src/routes/pegarDados");
 
 
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
@@ -31,6 +32,8 @@ app.use("/", indexRouter);
 app.use("/usuarios", usuarioRouter);
 app.use("/dogJump", gameRouter); 
 app.use("/pegarDados", pegarDadosRouter);
+app.use("/maiorPontuacao", pegarDadosRouter);
+app.use("/qtdVezesJogadas", pegarDadosRouter);
 
 
 
