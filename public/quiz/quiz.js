@@ -219,6 +219,7 @@ function resp10(resposta) {
    quiz10.style.display = "none"
    cardFinalizado.style.display = "flex"
    descobrirPersonalidade(Introversao,Sensivel,Curiosa,Energetica)
+   
 
  }
 
@@ -253,4 +254,10 @@ function resp10(resposta) {
         (Energetica > Introversao) ){
         personalidade.innerHTML = "Energética" 
     }
+
+    enviarPontuacoes(Introversao, Sensivel ,Curiosa, Energetica)
+ }
+
+ function enviarPontuacoes(){
+      
  }
