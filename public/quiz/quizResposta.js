@@ -3,7 +3,7 @@ let Introversao = 0;
 let Sensivel = 0;
 let Curiosa = 0;
 let Energetica = 0;
-
+let idUsuario = sessionStorage.ID_USUARIO
 let personalidade = document.getElementById("resultadoPersonalidade")
 
 
@@ -253,11 +253,54 @@ function resp10(resposta) {
         (Energetica > Curiosa) &&
         (Energetica > Introversao) ){
         personalidade.innerHTML = "Energética" 
+    } else{
+          personalidade.innerHTML = `Parece que você possue duas personalidades similares!!<br>
+          Veja mais sobre na dashboard!`
     }
 
     enviarPontuacoes(Introversao, Sensivel ,Curiosa, Energetica)
  }
 
- function enviarPontuacoes(){
+ function enviarPontuacoes(Introversao, Sensivel, Curiosa, Energetica){
       
+     fetch("/quiz/enviarPontuacao", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+              IntroversaoServer : Introversao,
+              SensivelServer : Sensivel,
+              CuriosaServer : Curiosa,
+              EnergeticaServer: Energetica,
+              idUsuarioServer : idUsuario,
+          })
+      }).then(function (resposta) {
+          console.log("Enviando os dados!")
+  
+          if (resposta.ok) {
+              console.log(resposta);
+  
+              resposta.json().then(json => {
+                  console.log(json);
+                  console.log(JSON.stringify(json));
+              });
+  
+          } else {
+  
+              console.log("Houve um erro ao armazenar sua personalidade!");
+  
+              resposta.text().then(texto => {
+                  console.error(texto);
+                  finalizarAguardar(texto);
+              });
+          }
+  
+      }).catch(function (erro) {
+          console.log(erro);
+      })
+  
+      
+  
+      return false;
  }

@@ -19,6 +19,7 @@ var indexRouter = require("./src/routes/index");
 var usuarioRouter = require("./src/routes/usuarios");
 var gameRouter = require("./src/routes/dogJump");
 var pegarDadosRouter = require("./src/routes/pegarDados");
+var quizRouter = require("./src/routes/quiz");
 
 
 
@@ -34,6 +35,9 @@ app.use("/dogJump", gameRouter);
 app.use("/pegarDados", pegarDadosRouter);
 app.use("/maiorPontuacao", pegarDadosRouter);
 app.use("/qtdVezesJogadas", pegarDadosRouter);
+app.use("/quiz", quizRouter);
+
+
 
 
 

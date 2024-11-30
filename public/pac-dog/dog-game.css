@@ -110,7 +110,18 @@ body{
     justify-content: start;
     
 }
-
+.dash-icon{
+    color: #E96F05;
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    top: 10%;
+    justify-content: start;
+}
+.dash-icon span{
+    font-size: 25px;
+    font-family: 'Fredoka', sans-serif;
+}
 
 
 
