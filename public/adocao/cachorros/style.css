@@ -36,6 +36,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: end;
     right: 0;
     width: 90%;
     font-size: 25px;
@@ -54,7 +55,7 @@ body{
     border: none;
     background-color: #E96F05;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
     transition: all 0.4s ease;
@@ -63,6 +64,18 @@ body{
     color: #E96F05;
     background-color: #fff;
     border: 2px solid #E96F05;
+}
+
+
+.historia span{
+    width: 920px;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 30px;
+    margin-top: 20px;
+
 }
 
 
